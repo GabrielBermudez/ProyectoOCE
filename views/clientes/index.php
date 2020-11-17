@@ -4,7 +4,7 @@
 require_once('../../bd/Query_Cliente.php');
 require_once('../../models/Cliente.php');
 $query=new QueryCliente();
-$cliente= new Cliente();
+
 //obtiene todos los libros con el método mostrar de la clase crud
 $listaClientes=$query->mostrar();
 
@@ -33,8 +33,8 @@ $listaClientes=$query->mostrar();
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <div class="navbar-nav">
-	      <a class="nav-link active" href="#">Cliente <span class="sr-only">(current)</span></a>
-	      <a class="nav-link" href="#">Haberes</a>
+	       <a class="nav-link active" href="index.php">Cliente <span class="sr-only">(current)</span></a>
+	      <a class="nav-link" href="../haberes/index.php">Haberes</a>
 	      
 	    </div>
 	  </div>
